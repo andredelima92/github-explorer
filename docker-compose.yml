@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  github-explorer-frontend:
+    container_name: github-explorer-frontend
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3003:3000"
+    volumes:
+      - .:/app
+    
