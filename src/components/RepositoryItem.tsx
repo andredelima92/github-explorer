@@ -1,4 +1,10 @@
-function RepositoryItem(props) {
+import { Repository } from "./RepositoryList";
+
+type RepositoryItemProps = {
+  repository: Repository;
+};
+
+function RepositoryItem(props: RepositoryItemProps) {
   return (
     <li>
       <strong>{props.repository.name}</strong>
